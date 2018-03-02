@@ -1,0 +1,11 @@
+<!-- Example of parallel methods
+	 To Run this example
+	 	- Right click on this XML file and select "Run as TestNG Suite"
+	 	-->
+<suite name="Test-method Suite" parallel="methods" thread-count="3" >
+  <test name="Test-method test" group-by-instances="true">
+    <classes>
+      <class name="net.mf.lft.examples.ParallelMethods" />
+    </classes>
+  </test>
+</suite>

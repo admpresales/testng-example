@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
+<!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
+<suite name="LeanFTSuite-corndog" parallel="false" verbose="2">
+  <test name="LeanFtTest-prontopuffl">
+
+    <classes>
+      <class name="net.mf.lft.examples.DataProviderExampleTest">
+        <methods> <!-- execute all methods (tests) in this class -->
+          <!--include name="test"/-->
+          <!-- <exclude name=".*MethodsToExclude.*"/> -->
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <!--parameter name="param" value="value" /-->
+  <!--
+  <test name="Login Test cases 01" parallel="classes" thread-count="2">
+    <parameter name="Operating_System" value="Windows 8"/>
+    <parameter name="Browser_Name" value="Internet Explorer"/>
+    <parameter name="Browser_Version" value="11"/>
+    <parameter name="Base_URL" value="https://www.google.com"/>
+    <classes>
+      <class name="net.mf.lft.examples.Automation_01"/>
+      <class name="net.mf.lft.examples.Automation_02"/>
+    </classes>
+  </test>
+  <test name="Login Test cases 02" parallel="classes" thread-count="2">
+    <parameter name="Operating_System" value="Windows XP"/>
+    <parameter name="Browser_Name" value="Mozilla Firefox"/>
+    <parameter name="Browser_Version" value="27"/>
+    <parameter name="Base_URL" value="https://www.google.com"/>
+    <classes>
+      <class name="net.mf.lft.examples.Automation_01"/>
+      <class name="net.mf.lft.examples.Automation_02"/>
+    </classes>
+  </test>
+  -->
+</suite>

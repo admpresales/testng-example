@@ -1,0 +1,26 @@
+<!-- Example of parallel tests and parallel classes while passing arguments
+	 To Run this example
+	 	- Right click on this XML file and select "Run as TestNG Suite"
+	 	-->
+<suite name="Automation Suite" allow-return-values="true" verbose="1" parallel="tests" thread-count="2">
+    <test name="Login Test cases 01" parallel="classes" thread-count="2">
+        <parameter name="Operating_System" value="Windows 8"/>
+        <parameter name="Browser_Name" value="Internet Explorer"/>
+        <parameter name="Browser_Version" value="11"/>
+        <parameter name="Base_URL" value="https://www.google.com"/>
+        <classes>
+            <class name="net.mf.lft.examples.Automation_01"/>
+            <class name="net.mf.lft.examples.Automation_02"/>
+        </classes>
+    </test>
+    <test name="Login Test cases 02" parallel="classes" thread-count="2">
+        <parameter name="Operating_System" value="Windows XP"/>
+        <parameter name="Browser_Name" value="Mozilla Firefox"/>
+        <parameter name="Browser_Version" value="27"/>
+        <parameter name="Base_URL" value="https://www.google.com"/>
+        <classes>
+            <class name="net.mf.lft.examples.Automation_01"/>
+            <class name="net.mf.lft.examples.Automation_02"/>
+        </classes>
+    </test>
+</suite>

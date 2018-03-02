@@ -1,0 +1,13 @@
+<!-- Example of parallel classes
+	 To Run this example
+	 	- Right click on this XML file and select "Run as TestNG Suite"
+	 	-->
+<suite name="Test-class Suite" parallel="classes" thread-count="3" >
+  <test name="Test-class test" >
+    <classes>
+      <class name="net.mf.lft.examples.ParallelClassesTestOne" />
+      <class name="net.mf.lft.examples.ParallelClassesTestTwo" />
+      <class name="net.mf.lft.examples.ParallelClassesTestThree" />
+    </classes>
+  </test>
+</suite>
