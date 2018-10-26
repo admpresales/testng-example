@@ -22,6 +22,7 @@ Two good sources on explaining how to execute TestNG tests in parallel (class, t
 
 * http://howtodoinjava.com/testng/testng-executing-parallel-tests/
 * http://stackoverflow.com/questions/24216163/configure-parallel-execution-of-tests-and-classes-in-testng-xml
+* [Running TestNG Tests in Parallel with Maven](https://books.sonatype.com/mcookbook/reference/ch07s06.html)
 
 Reference on how to pass arguments from the xml file
 
